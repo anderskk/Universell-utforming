@@ -1,0 +1,57 @@
+header {
+  padding: 0 1rem;
+  color: white;
+  background-color: black;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav > ul {
+  list-style: none;
+}
+
+li > a {
+  color: white;
+}
+
+h1 {
+  margin: 0.5em 0;
+}
+
+main {
+  padding: 0 1rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: baseline
+}
+
+.row > :nth-child(n-1){
+  margin-left: 1em;
+}
+
+.row.space-around {
+  justify-content: space-around;
+}
+
+.input-text {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.input-text > input {
+  padding: 0.3em 0.5em;
+}
