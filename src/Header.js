@@ -1,18 +1,15 @@
 import React from 'react';
-// import Link from './Link';
-import { Link } from 'react-router-dom';
+import Link from './Link';
 
 
 const Header = () => (
-    <header className="row space-around">
-        <h1>My page</h1>
-        <nav>
-            <ul className="row space-around no-disc">
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/about">About</Link></li>
-            </ul>
-        </nav>
-  </header>
+    <div className="header row space-around">
+        <div className="extra-big-text">Rosabloggen 💖</div>
+        <div className="row space-around no-disc">
+            <li><Link to="/" linkName="Forsiden" /></li>
+            <li><Link to="/about" linkName="Om meg" /></li>
+        </div>
+    </div>
 );
 
 export default Header;

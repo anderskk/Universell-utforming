@@ -1,28 +1,33 @@
-header {
-  padding: 0 1rem;
+body {
+  background-color: #faebd7;
+  color: #ff49b6;
+}
+
+.header {
+  padding: 1rem;
   color: white;
-  background-color: black;
+  background-color: #d00977;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
+.link {
+  border: none;
+  background: inherit;
+  color: white;
+  font-size: medium;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
-nav > ul {
+*:focus {
+  outline: none;
+}
+
+li {
   list-style: none;
 }
 
-li > a {
-  color: white;
-}
-
-h1 {
-  margin: 0.5em 0;
-}
-
-main {
-  padding: 0 1rem;
+.home {
+  padding: 1rem;
 }
 
 .row {
@@ -54,4 +59,30 @@ main {
 
 .input-text > input {
   padding: 0.3em 0.5em;
+}
+
+.big-text {
+  font-size: x-large;
+  font-weight: 600;
+}
+
+.extra-big-text {
+  font-size: xx-large;
+  font-weight: 600;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0px;
+  width: calc(100% - 2em);
+  padding: 1em;
+  background-color: #d00977
+}
+
+.button {
+  width: 100px;
+  padding: 0.5em;
+  background: antiquewhite;
+  border-radius: 12px;
+  cursor: pointer;
 }

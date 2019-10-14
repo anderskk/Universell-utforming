@@ -1,9 +1,9 @@
 import React from 'react';
 
-const InputText = ({ id, label }) => (
+const InputText = ({ label }) => (
     <div className="input-text">
-        <label for={ id }>{ label }</label>
-        <input type="text" name={ id } id={ id } />
+        <div>{ label }</div>
+        <input type="text" id="input-text" />
     </div>
 );
 

@@ -1,9 +1,9 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
 
-const Link = ({ to, children }) => (
-    <a href={ to }>
-        { children }
-    </a>
+
+const Link = ({ to, linkName, history }) => (
+    <button className="link" onClick={ () => history.push(to) }>{ linkName }</button>
 );
 
-export default Link;
+export default withRouter(Link);
